@@ -5,17 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>milanjekyll</title>
+  <link href="{{site.baseurl}}/css/main.css">
 </head>
 <body>
+
   <header>
-    <strong>News from my room</strong>
-    <nav>
-      <ul>
-        <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-        <li><a href="{{site.baseurl}}/news.html">News</a></li>
-      </ul>
-    </nav>
+    <h1><strong>News from my room</strong></h1>
+    {% include nav.html %}
   </header>
+
   {{content}}
+
+  <footer>
+    {% include nav.html %}
+    <p>copy right by me</p>
+  </footer>
 </body>
 </html>
